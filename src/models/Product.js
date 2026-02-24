@@ -11,7 +11,7 @@ const ProductSchema=new mongoose.Schema({
     description: String
 })
 
-const Product= mongoose.models.Product || mongoose.model("Prodduct" , ProductSchema)
+const Product= mongoose.models.Product || mongoose.model("Product" , ProductSchema)
 export default Product;
 
 
