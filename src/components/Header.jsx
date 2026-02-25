@@ -49,7 +49,7 @@ export default function Header() {
 
                         <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer hover:text-black">
                             <i className="fas fa-gamepad ml-1"></i>
-                            <Link href="">گیمینگ</Link>
+                            <Link href="/products">گیمینگ</Link>
                         </li>
 
                         <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer hover:text-black">
@@ -63,7 +63,7 @@ export default function Header() {
                     <ul className={`${isdropOpen ? "block" : "hidden"} lg:hidden bg-blue-100 mt-2 rounded-md`}>
                         <li className="px-4 py-2 hover:bg-blue-200 cursor-pointer">
                             <i className="fas fa-gamepad ml-1"></i>
-                            <a href="">گیمینگ</a>
+                            <Link href="/products">گیمینگ</Link>
                         </li>
                         <li className="px-4 py-2 hover:bg-blue-200 cursor-pointer">
                             <i className="fas fa-laptop  ml-1"></i>
