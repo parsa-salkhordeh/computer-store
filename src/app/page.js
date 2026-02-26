@@ -6,11 +6,16 @@ import HeroTopBrand from "@/components/HeroTopBrand";
 import ProductsList from "@/components/ProductsList";
 import TopBrand from "@/components/TopBrand";
 
+import { connectedToDb } from "@/lib/mongodb";
+import Product from "@/models/Product";
+
 
 
 export default async function Home() {
-  const res= await fetch("http://localhost:3000/api/products")
-  const data=await res.json()
+  
+  await connectedToDb()
+  const data=await Product.find()
+
   console.log(data)
   return (
     <div>
@@ -22,3 +27,4 @@ export default async function Home() {
     </div>
   );
 }
+
