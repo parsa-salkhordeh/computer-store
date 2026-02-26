@@ -27,7 +27,7 @@ console.log(products)
               <h2>{pr.name}</h2>
               <h3 className=" text-green-700 my-1">{pr.price} تومان</h3>
               <h4>
-                <Link href="" className="text-blue-500">دیدن جزیات</Link>
+                <Link href={`/products/${pr._id}`} className="text-blue-500">دیدن جزیات</Link>
               </h4>
                 <button className="rounded-md mt-2 bg-green-300 px-2 py-1">خرید</button>
               
